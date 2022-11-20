@@ -1,6 +1,7 @@
-const express = require("express");
+import express, { Request, Response } from "express";
+import dotenv from "dotenv";
 
-require("dotenv").config({ path: "../.env" });
+dotenv.config({ path: "../.env" });
 
 const PORT = process.env.PORT || 8080;
 
